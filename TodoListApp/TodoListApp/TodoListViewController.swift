@@ -6,10 +6,14 @@ class TodoListViewController: UIViewController {
 
     
     
+    let todoListViewModel = TodoViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        // 데이터 불러오기
+        
     }
     
 }
@@ -50,7 +54,7 @@ extension TodoListViewController: UICollectionViewDataSource {
 
 extension TodoListViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width: CGFloat = 250
+        let width: CGFloat = collectionView.bounds.width
         let height: CGFloat = 50
         return CGSize(width: width, height: height)
     }
@@ -61,7 +65,17 @@ class TodoListCell: UICollectionViewCell {
     @IBOutlet var checkButton: UIButton!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var deleteButton: UIButton!
+    @IBOutlet weak var strikeThroughView: UIView!
     
+    @IBOutlet weak var strikeThoughWidth: NSLayoutConstraint!
+    
+    private func showStrikeThrough(_ show: Bool) {
+        if show {
+            strikeThoughWidth.constant = descriptionLabel.bounds.width
+        } else {
+            strikeThoughWidth.constant = 0
+        }
+    }
     
     
 }

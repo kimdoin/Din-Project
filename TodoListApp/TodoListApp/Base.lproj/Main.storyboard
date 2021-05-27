@@ -58,12 +58,20 @@
                                                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="20"/>
                                                     </state>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TodoList" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OS-Rq-IVT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TodoList" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5OS-Rq-IVT">
                                                     <rect key="frame" x="71" y="34.5" width="278" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oz6-CG-e5W">
+                                                    <rect key="frame" x="30" y="44.5" width="250" height="1"/>
+                                                    <color key="backgroundColor" red="0.87279565555533178" green="0.87279565555533178" blue="0.87279565555533178" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="8cE-nr-uaN"/>
+                                                        <constraint firstAttribute="width" constant="250" id="BKX-3r-wXt"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="5OS-Rq-IVT" firstAttribute="leading" secondItem="faO-81-TIn" secondAttribute="trailing" constant="16" id="2As-0U-O7a"/>
@@ -72,7 +80,9 @@
                                                 <constraint firstItem="faO-81-TIn" firstAttribute="centerY" secondItem="Pih-dB-hMe" secondAttribute="centerY" id="GDt-LG-sgY"/>
                                                 <constraint firstItem="D5c-HU-SVl" firstAttribute="centerY" secondItem="Pih-dB-hMe" secondAttribute="centerY" id="RQ4-D2-UNt"/>
                                                 <constraint firstItem="D5c-HU-SVl" firstAttribute="leading" secondItem="5OS-Rq-IVT" secondAttribute="trailing" constant="10" id="YSM-6m-gna"/>
+                                                <constraint firstItem="Oz6-CG-e5W" firstAttribute="centerY" secondItem="Pih-dB-hMe" secondAttribute="centerY" id="ZRx-Q2-OBb"/>
                                                 <constraint firstAttribute="trailing" secondItem="D5c-HU-SVl" secondAttribute="trailing" constant="20" id="pfX-Qz-sXn"/>
+                                                <constraint firstItem="Oz6-CG-e5W" firstAttribute="leading" secondItem="faO-81-TIn" secondAttribute="leading" constant="10" id="xTY-nY-7P6"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="90"/>
@@ -80,10 +90,12 @@
                                             <outlet property="checkButton" destination="faO-81-TIn" id="0Tl-ep-Uwr"/>
                                             <outlet property="deleteButton" destination="D5c-HU-SVl" id="htx-xN-2ag"/>
                                             <outlet property="descriptionLabel" destination="5OS-Rq-IVT" id="m5F-oU-IGl"/>
+                                            <outlet property="strikeThoughWidth" destination="BKX-3r-wXt" id="hr6-Kj-AFo"/>
+                                            <outlet property="strikeThroughView" destination="Oz6-CG-e5W" id="sah-b4-fec"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="TodoListHeader" id="Nvi-HW-QQp" customClass="TodoListHeaderView" customModule="TodoListApp">
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TodoListHeader" id="Nvi-HW-QQp" customClass="TodoListHeaderView" customModule="TodoListApp">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -205,6 +217,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="rNj-yA-Ykt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YLr-yg-Var">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="selectedImageTintColor" systemColor="systemPurpleColor"/>
