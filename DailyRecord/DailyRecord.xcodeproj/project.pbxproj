@@ -13,6 +13,7 @@
 		D77F15B42672597800242099 /* DailyRecord.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D77F15B22672597800242099 /* DailyRecord.xcdatamodeld */; };
 		D77F15B62672597B00242099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77F15B52672597B00242099 /* Assets.xcassets */; };
 		D77F15B92672597B00242099 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77F15B72672597B00242099 /* LaunchScreen.storyboard */; };
+		D77F15C22672609D00242099 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F15C12672609D00242099 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D77F15B52672597B00242099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D77F15B82672597B00242099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D77F15BA2672597B00242099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77F15C12672609D00242099 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D77F15A82672597800242099 /* DailyRecord */ = {
 			isa = PBXGroup;
 			children = (
+				D77F15C02672607800242099 /* Model */,
 				D77F15A92672597800242099 /* AppDelegate.swift */,
 				D77F15AB2672597800242099 /* SceneDelegate.swift */,
 				D77F15AF2672597800242099 /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				D77F15B22672597800242099 /* DailyRecord.xcdatamodeld */,
 			);
 			path = DailyRecord;
+			sourceTree = "<group>";
+		};
+		D77F15C02672607800242099 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D77F15C12672609D00242099 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 				D77F15AA2672597800242099 /* AppDelegate.swift in Sources */,
 				D77F15B42672597800242099 /* DailyRecord.xcdatamodeld in Sources */,
 				D77F15AC2672597800242099 /* SceneDelegate.swift in Sources */,
+				D77F15C22672609D00242099 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
