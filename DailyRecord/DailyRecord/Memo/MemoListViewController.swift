@@ -21,6 +21,10 @@ class MemoListViewController: UIViewController {
         return f
     }()
     
+    func updateUI() {
+        memoListCount.text = "\(DataManager.shared.memoList.count)개의 메모"
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let cell = sender as? UITableViewCell, let indexPath = listTableView.indexPath(for: cell) {
             if let vc = segue.destination as? DetailViewController {
@@ -33,6 +37,7 @@ class MemoListViewController: UIViewController {
         super.viewWillAppear(animated)
         DataManager.shared.fetchMemo()
         listTableView.reloadData()
+        updateUI()
         
 //        listTableView.reloadData()
 //        memoListCount.text = "\(Memo.dummyMemoList.count)개의 메모"
@@ -47,14 +52,20 @@ class MemoListViewController: UIViewController {
         }
     }
     
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        memoListCount.text = "\(DataManager.shared.memoList.count)개의 메모"
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        memoListCount.text = "\(DataManager.shared.memoList.count)개의 메모"
+        
         
         token = NotificationCenter.default.addObserver(forName: ComposeViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main) { [weak self] (noti) in
             
             self?.listTableView.reloadData()
             self?.memoListCount.text = "\(DataManager.shared.memoList.count)개의 메모"
+            
         }
         // Notification은 옵저버를 해재해줘야함
         
@@ -75,4 +86,19 @@ extension MemoListViewController: UITableViewDataSource {
         cell.detailTextLabel?.text = formatter.string(for: target.insertDate)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let target = DataManager.shared.memoList[indexPath.row]
+            DataManager.shared.deleteMemo(target)
+            DataManager.shared.memoList.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
+
+
