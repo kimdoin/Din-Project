@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>서울남산 장체B.ttf</string>
+		<string>서울남산 장체BL.ttf</string>
+		<string>서울남산 장체EB.ttf</string>
+		<string>서울남산 장체L.ttf</string>
+		<string>서울남산 장체M.ttf</string>
+		<string>drfont_daraehand_Basic.ttf</string>
+		<string>DXMSubtitlesM-KSCpc-EUC-H.ttf</string>
+		<string>SangSangFlowerRoad.otf</string>
+		<string>THE_Oegyeinseolmyeongseo.ttf</string>
+		<string>WiggleHangeul.ttf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>

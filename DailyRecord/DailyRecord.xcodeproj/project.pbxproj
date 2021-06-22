@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D72C98692681AB7900984CDF /* SangSangFlowerRoad.otf in Resources */ = {isa = PBXBuildFile; fileRef = D72C98642681AB7900984CDF /* SangSangFlowerRoad.otf */; };
+		D72C986A2681AB7900984CDF /* WiggleHangeul.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C98652681AB7900984CDF /* WiggleHangeul.ttf */; };
+		D72C986B2681AB7900984CDF /* DXMSubtitlesM-KSCpc-EUC-H.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C98662681AB7900984CDF /* DXMSubtitlesM-KSCpc-EUC-H.ttf */; };
+		D72C986C2681AB7900984CDF /* THE_Oegyeinseolmyeongseo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C98672681AB7900984CDF /* THE_Oegyeinseolmyeongseo.ttf */; };
+		D72C986D2681AB7900984CDF /* drfont_daraehand_Basic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C98682681AB7900984CDF /* drfont_daraehand_Basic.ttf */; };
+		D72C98732681AB8D00984CDF /* 서울남산 장체B.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C986E2681AB8D00984CDF /* 서울남산 장체B.ttf */; };
+		D72C98742681AB8D00984CDF /* 서울남산 장체L.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C986F2681AB8D00984CDF /* 서울남산 장체L.ttf */; };
+		D72C98752681AB8D00984CDF /* 서울남산 장체EB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C98702681AB8D00984CDF /* 서울남산 장체EB.ttf */; };
+		D72C98762681AB8D00984CDF /* 서울남산 장체M.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C98712681AB8D00984CDF /* 서울남산 장체M.ttf */; };
+		D72C98772681AB8D00984CDF /* 서울남산 장체BL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D72C98722681AB8D00984CDF /* 서울남산 장체BL.ttf */; };
 		D77F15AA2672597800242099 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F15A92672597800242099 /* AppDelegate.swift */; };
 		D77F15AC2672597800242099 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77F15AB2672597800242099 /* SceneDelegate.swift */; };
 		D77F15B12672597800242099 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77F15AF2672597800242099 /* Main.storyboard */; };
@@ -22,6 +32,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D72C98642681AB7900984CDF /* SangSangFlowerRoad.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SangSangFlowerRoad.otf; path = "../../../../Din의 개발노트/Font/SangSangFlowerRoad.otf"; sourceTree = "<group>"; };
+		D72C98652681AB7900984CDF /* WiggleHangeul.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = WiggleHangeul.ttf; path = "../../../../Din의 개발노트/Font/WiggleHangeul.ttf"; sourceTree = "<group>"; };
+		D72C98662681AB7900984CDF /* DXMSubtitlesM-KSCpc-EUC-H.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DXMSubtitlesM-KSCpc-EUC-H.ttf"; path = "../../../../Din의 개발노트/Font/DXMSubtitlesM-KSCpc-EUC-H.ttf"; sourceTree = "<group>"; };
+		D72C98672681AB7900984CDF /* THE_Oegyeinseolmyeongseo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = THE_Oegyeinseolmyeongseo.ttf; path = "../../../../Din의 개발노트/Font/THE_Oegyeinseolmyeongseo.ttf"; sourceTree = "<group>"; };
+		D72C98682681AB7900984CDF /* drfont_daraehand_Basic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = drfont_daraehand_Basic.ttf; path = "../../../../Din의 개발노트/Font/drfont_daraehand_Basic.ttf"; sourceTree = "<group>"; };
+		D72C986E2681AB8D00984CDF /* 서울남산 장체B.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울남산 장체B.ttf"; path = "../../../../Din의 개발노트/Font/Seoulnamsan_ttf/서울남산 장체B.ttf"; sourceTree = "<group>"; };
+		D72C986F2681AB8D00984CDF /* 서울남산 장체L.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울남산 장체L.ttf"; path = "../../../../Din의 개발노트/Font/Seoulnamsan_ttf/서울남산 장체L.ttf"; sourceTree = "<group>"; };
+		D72C98702681AB8D00984CDF /* 서울남산 장체EB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울남산 장체EB.ttf"; path = "../../../../Din의 개발노트/Font/Seoulnamsan_ttf/서울남산 장체EB.ttf"; sourceTree = "<group>"; };
+		D72C98712681AB8D00984CDF /* 서울남산 장체M.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울남산 장체M.ttf"; path = "../../../../Din의 개발노트/Font/Seoulnamsan_ttf/서울남산 장체M.ttf"; sourceTree = "<group>"; };
+		D72C98722681AB8D00984CDF /* 서울남산 장체BL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "서울남산 장체BL.ttf"; path = "../../../../Din의 개발노트/Font/Seoulnamsan_ttf/서울남산 장체BL.ttf"; sourceTree = "<group>"; };
 		D77F15A62672597800242099 /* DailyRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77F15A92672597800242099 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77F15AB2672597800242099 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D72C98632681AB1C00984CDF /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D72C986E2681AB8D00984CDF /* 서울남산 장체B.ttf */,
+				D72C98722681AB8D00984CDF /* 서울남산 장체BL.ttf */,
+				D72C98702681AB8D00984CDF /* 서울남산 장체EB.ttf */,
+				D72C986F2681AB8D00984CDF /* 서울남산 장체L.ttf */,
+				D72C98712681AB8D00984CDF /* 서울남산 장체M.ttf */,
+				D72C98682681AB7900984CDF /* drfont_daraehand_Basic.ttf */,
+				D72C98662681AB7900984CDF /* DXMSubtitlesM-KSCpc-EUC-H.ttf */,
+				D72C98642681AB7900984CDF /* SangSangFlowerRoad.otf */,
+				D72C98672681AB7900984CDF /* THE_Oegyeinseolmyeongseo.ttf */,
+				D72C98652681AB7900984CDF /* WiggleHangeul.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		D77F159D2672597800242099 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +105,7 @@
 		D77F15A82672597800242099 /* DailyRecord */ = {
 			isa = PBXGroup;
 			children = (
+				D72C98632681AB1C00984CDF /* Font */,
 				D77F15CC26735C6200242099 /* Data */,
 				D77F15C02672607800242099 /* Model */,
 				D77F15C926734C7E00242099 /* Memo */,
@@ -166,7 +204,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72C98752681AB8D00984CDF /* 서울남산 장체EB.ttf in Resources */,
+				D72C98762681AB8D00984CDF /* 서울남산 장체M.ttf in Resources */,
+				D72C98692681AB7900984CDF /* SangSangFlowerRoad.otf in Resources */,
+				D72C986C2681AB7900984CDF /* THE_Oegyeinseolmyeongseo.ttf in Resources */,
+				D72C98772681AB8D00984CDF /* 서울남산 장체BL.ttf in Resources */,
+				D72C986A2681AB7900984CDF /* WiggleHangeul.ttf in Resources */,
+				D72C986D2681AB7900984CDF /* drfont_daraehand_Basic.ttf in Resources */,
+				D72C986B2681AB7900984CDF /* DXMSubtitlesM-KSCpc-EUC-H.ttf in Resources */,
 				D77F15B92672597B00242099 /* LaunchScreen.storyboard in Resources */,
+				D72C98742681AB8D00984CDF /* 서울남산 장체L.ttf in Resources */,
+				D72C98732681AB8D00984CDF /* 서울남산 장체B.ttf in Resources */,
 				D77F15B62672597B00242099 /* Assets.xcassets in Resources */,
 				D77F15B12672597800242099 /* Main.storyboard in Resources */,
 			);
